@@ -147,6 +147,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-#export PS1="$goversion \W/$(__git_ps1 " (%s)")$ "
-# dinamycally change terminal title based on current directory
-#export PROMPT_COMMAND='echo -ne "\033]0;${PWD}\007"'
+# set xterm-256color support
+# enabling custom vim color scheme
+export TERM='xterm-256color'
