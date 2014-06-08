@@ -98,6 +98,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'garbas/vim-snipmate'
   Plug 'honza/vim-snippets'
   Plug 'jiangmiao/auto-pairs'
+  Plug 'jnwhiteh/vim-golang'
 call plug#end()
 
 
