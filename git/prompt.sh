@@ -16,9 +16,11 @@ function git_dirty {
     echo ""
   else
     if [ "$clean" == "" ]; then
-      echo -e "${nc}on ${red}$(git_prompt_info)${nc}"
+      # echo -e "${nc}on ${red}$(git_prompt_info)${nc}"
+      echo -e "${red}$(git_prompt_info)${nc}"
     else
-      echo -e "${nc}on ${green}$(git_prompt_info)${nc}"
+      # echo -e "${nc}on ${green}$(git_prompt_info)${nc}"
+      echo -e "${green}$(git_prompt_info)${nc}"
     fi
   fi
 }
