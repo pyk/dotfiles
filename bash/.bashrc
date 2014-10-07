@@ -21,6 +21,9 @@ do
   source $file
 done
 
+# PROMPT COMMAND
+PROMPT_COMMAND='__git_ps1 "\w" "\\\$ "'
+
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
