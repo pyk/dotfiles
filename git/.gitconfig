@@ -1,7 +1,7 @@
 [core]
     excludesfile = ~/.gitignore
     quotepath = false
-    editor = sublime -w
+    editor = subl -w
  
 [user]
     name =  Bayu Aldi Yansyah
