@@ -140,3 +140,6 @@ fi
 # set xterm-256color support
 # enabling custom vim color scheme
 export TERM='xterm-256color'
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
