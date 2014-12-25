@@ -1,3 +1,5 @@
-export PATH=$PATH:$HOME/android/adt-bundle-linux-x86-20140321/sdk/tools
-export PATH=$PATH:$HOME/android/adt-bundle-linux-x86-20140321/sdk/platform-tools
-export PATH=$PATH:$HOME/android/apache-ant-1.9.4/bin
+# android studio
+export PATH=$PATH:$HOME/android/android-studio/bin/
+
+# android sdk
+export PATH=$PATH:$HOME/android/android-sdk-linux/tools/
