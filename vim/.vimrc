@@ -197,4 +197,4 @@ function! WatchForChanges(bufname, ...)
   let @"=reg_saved"
 endfunction
 
-autocmd BufEnter * :WatchForChanges!
+autocmd BufEnter *.* :WatchForChanges!
