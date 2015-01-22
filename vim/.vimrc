@@ -99,6 +99,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'honza/vim-snippets'
   Plug 'jiangmiao/auto-pairs'
   Plug 'jnwhiteh/vim-golang'
+  Plug 'rhysd/vim-clang-format'
 call plug#end()
 
 
@@ -198,3 +199,11 @@ function! WatchForChanges(bufname, ...)
 endfunction
 
 autocmd BufEnter *.* :WatchForChanges!
+
+" clang-format
+let g:clang_format#command = 'clang-format-3.5'
+" map to <Leader>cf in C++ code
+autocmd FileType c,cpp,objc nnoremap <buffer><Leader>cf :<C-u>ClangFormat<CR>
+autocmd FileType c,cpp,objc vnoremap <buffer><Leader>cf :ClangFormat<CR>
+" Toggle auto formatting:
+nmap <Leader>C :ClangFormatAutoToggle<CR>

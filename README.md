@@ -8,6 +8,7 @@ A bunch of my development machine configuration files.
     $ ln -s ~/.dotfiles/bash/.bashrc ~/.bashrc
 
 ## Setup VIM
+requirements: [clang-format](http://llvm.org/apt/)
 
     $ mkdir -p $HOME/.vim/colors
     $ ln -s $HOME/.dotfiles/vim/colors/bayus.vim $HOME/.vim/colors/bayus.vim
