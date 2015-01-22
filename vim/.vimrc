@@ -143,7 +143,7 @@ function! WatchForChanges(bufname, ...)
   if while_in_this_buffer_only
     let event_bufspec = a:bufname
   else
-    let event_bufspec = '*'
+    let event_bufspec = '*.*'
   end
 
   let reg_saved = @"
@@ -156,14 +156,14 @@ function! WatchForChanges(bufname, ...)
   if !l:defined
     if l:autoread
       let msg = msg . 'Autoread enabled - '
-      if a:bufname == '*'
+      if a:bufname == '*.*'
         set autoread
       else
         setlocal autoread
       end
     end
     silent! exec 'augroup '.id
-      if a:bufname != '*'
+      if a:bufname != '*.*'
         exec "au BufDelete    ".a:bufname . " execute 'au! ".id."' | execute 'augroup! ".id."'"
       end
         exec "au BufEnter     ".event_bufspec . " :checktime ".bufspec
@@ -181,7 +181,7 @@ function! WatchForChanges(bufname, ...)
   if l:disable || (l:toggle && l:defined)
     if l:autoread
       let msg = msg . 'Autoread disabled - '
-      if a:bufname == '*'
+      if a:bufname == '*.*'
         set noautoread
       else
         setlocal noautoread
