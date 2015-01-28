@@ -93,12 +93,8 @@ call plug#begin('~/.vim/plugged')
   Plug 'tpope/vim-endwise'
   Plug 'lilydjwg/colorizer'
   Plug 'groenewege/vim-less'
-  Plug 'MarcWeber/vim-addon-mw-utils'
-  Plug 'tomtom/tlib_vim'
-  Plug 'garbas/vim-snipmate'
-  Plug 'honza/vim-snippets'
   Plug 'jiangmiao/auto-pairs'
-  Plug 'jnwhiteh/vim-golang'
+  Plug 'fatih/vim-go'
   Plug 'rhysd/vim-clang-format'
 call plug#end()
 
