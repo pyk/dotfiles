@@ -317,3 +317,20 @@ hi shStatement          ctermfg=60  ctermbg=NONE cterm=NONE
 hi shTestPattern        ctermfg=145 ctermbg=NONE cterm=NONE
 hi shTestSingleQuote    ctermfg=145 ctermbg=NONE cterm=NONE
 hi shVariable           ctermfg=67  ctermbg=NONE cterm=NONE
+
+hi goBoolean         ctermfg=60  ctermbg=NONE cterm=NONE
+hi goBuiltins        ctermfg=67  ctermbg=NONE cterm=NONE
+hi goComment         ctermfg=59  ctermbg=NONE cterm=NONE
+hi goConditional     ctermfg=67  ctermbg=NONE cterm=NONE
+hi goDecimalInt      ctermfg=30  ctermbg=NONE cterm=NONE
+hi goDeclType        ctermfg=60  ctermbg=NONE cterm=NONE
+hi goDeclaration     ctermfg=67  ctermbg=NONE cterm=NONE
+hi goDirective       ctermfg=60  ctermbg=NONE cterm=NONE
+hi goFormatSpecifier ctermfg=30  ctermbg=NONE cterm=NONE
+hi goOperator        ctermfg=30  ctermbg=NONE cterm=NONE
+hi goRawString       ctermfg=30  ctermbg=NONE cterm=NONE
+hi goRepeat          ctermfg=67  ctermbg=NONE cterm=NONE
+hi goSignedInts      ctermfg=60  ctermbg=NONE cterm=NONE
+hi goStatement       ctermfg=67  ctermbg=NONE cterm=NONE
+hi goString          ctermfg=145 ctermbg=NONE cterm=NONE
+hi goType            ctermfg=60  ctermbg=NONE cterm=NONE
