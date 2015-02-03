@@ -50,7 +50,7 @@ shopt -s checkwinsize
 #shopt -s globstar
 
 # make less more friendly for non-text input files, see lesspipe(1)
-[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
+# [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
 # set variable identifying the chroot you work in (used in the prompt below)
 if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
@@ -142,8 +142,8 @@ fi
 export TERM='xterm-256color'
 
 # set locale
-export LC_ALL="en_US.UTF-8"
-export LANGUAGE="en_US.UTF-8"
+# export LC_ALL="en_US.UTF-8"
+# export LANGUAGE="en_US.UTF-8"
 
 ## #Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+#export PATH="/usr/local/heroku/bin:$PATH"
