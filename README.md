@@ -1,11 +1,20 @@
 # Bayu's dotfiles
 
-A bunch of my development machine configuration files.
+A bunch of my CoreOS machine configuration files.
 
 ## Setup
 
-    git clone https://github.com/pyk/dotfiles.git ~/.dotfiles
-    ln -s ~/.dotfiles/bash/.bashrc ~/.bashrc
+    git clone -b coreos https://github.com/pyk/dotfiles.git ~/.dotfiles
+    ln -sf ~/.dotfiles/bash/.bashrc ~/.bashrc
+
+## Setup git
+     
+    ln -sf ~/.dotfiles/git/.gitconfig ~/.gitconfig
+    ln -sf ~/.dotfiles/git/.gitignore ~/.gitignore
+
+## Setup top(1)
+
+    ln -sf ~/.dotfiles/top/.toprc ~/.toprc
 
 ## Setup VIM
 requirements: [clang-format](http://llvm.org/apt/)
