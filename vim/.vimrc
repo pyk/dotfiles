@@ -18,10 +18,10 @@ colorscheme bayus
 set background=dark
 
 set expandtab    " translate tab to space
-set shiftwidth=2 " 1 tab = 2 space
+set shiftwidth=4 " 1 tab = 2 space
 set smarttab
-set softtabstop=2
-set tabstop=2
+set softtabstop=4
+set tabstop=4
 
 set ai " Auto indent
 set si " Smart indent
@@ -77,6 +77,8 @@ filetype on
 autocmd FileType make setlocal ts=4 sts=4 sw=4 noexpandtab
 " Golang use 4 tab
 autocmd FileType go setlocal ts=4 sts=4 sw=4 noexpandtab
+" JSON use 4 tab
+autocmd FileType json setlocal ts=4 sts=4 sw=4 noexpandtab
 " Treat .rss files as XML
 autocmd BufNewFile,BufRead *.rss setfiletype xml
 " remove trailing whitespace when saved
