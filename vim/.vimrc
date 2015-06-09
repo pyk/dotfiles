@@ -28,7 +28,7 @@ set si " Smart indent
 
 set textwidth=80  " break every 80 character
 
-"set relativenumber
+" set relative number
 set number
 set numberwidth=4
 
@@ -98,6 +98,8 @@ call plug#begin('~/.vim/plugged')
   Plug 'jiangmiao/auto-pairs'
   Plug 'fatih/vim-go'
   Plug 'rhysd/vim-clang-format'
+  Plug 'mattn/emmet-vim'
+  Plug 'bling/vim-airline'
 call plug#end()
 
 
@@ -114,3 +116,6 @@ autocmd FileType c,cpp,objc nnoremap <buffer><Leader>cf :<C-u>ClangFormat<CR>
 autocmd FileType c,cpp,objc vnoremap <buffer><Leader>cf :ClangFormat<CR>
 " Toggle auto formatting:
 nmap <Leader>C :ClangFormatAutoToggle<CR>
+
+" vim-airline for status bar
+set laststatus=2
