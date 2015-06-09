@@ -119,3 +119,10 @@ nmap <Leader>C :ClangFormatAutoToggle<CR>
 
 " vim-airline for status bar
 set laststatus=2
+" enable the list of buffer
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#fnamemod = ':t'
+let g:airline#extensions#tabline#buffer_nr_show = 1
+
+" NERDTree auto appear
+autocmd vimenter * NERDTree
