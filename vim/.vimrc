@@ -23,10 +23,18 @@ set smarttab
 set softtabstop=4
 set tabstop=4
 
+" forces vim to source .vimrc file if it present in working directory
+set exrc
+" restrict usage of some commands in non-default .vimrc files
+set secure
+
 set ai " Auto indent
 set si " Smart indent
 
 set textwidth=80  " break every 80 character
+" make 81st column standout from the crowd
+" highlight ColorColumn ctermbg=59
+" call matchadd('ColorColumn', '\%81v', 100)
 
 " set relative number
 set number
@@ -84,14 +92,9 @@ autocmd BufNewFile,BufRead *.rss setfiletype xml
 " remove trailing whitespace when saved
 autocmd BufWritePre * :call Preserve("%s/\\s\\+$//e")
 
-" make 81st column standout from the crowd
-highlight ColorColumn ctermbg=red ctermfg=blue
-call matchadd('ColorColumn', '\%81v', 100)
-
 " github.com/junegunn/vim-plug
 call plug#begin('~/.vim/plugged')
   Plug 'junegunn/vim-easy-align'
-  Plug 'scrooloose/nerdtree'
   Plug 'tpope/vim-endwise'
   Plug 'lilydjwg/colorizer'
   Plug 'groenewege/vim-less'
@@ -123,6 +126,3 @@ set laststatus=2
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline#extensions#tabline#buffer_nr_show = 1
-
-" NERDTree auto appear
-autocmd vimenter * NERDTree
