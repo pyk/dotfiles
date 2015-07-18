@@ -334,3 +334,14 @@ hi goSignedInts      ctermfg=60  ctermbg=NONE cterm=NONE
 hi goStatement       ctermfg=67  ctermbg=NONE cterm=NONE
 hi goString          ctermfg=145 ctermbg=NONE cterm=NONE
 hi goType            ctermfg=60  ctermbg=NONE cterm=NONE
+
+hi Comment        ctermfg=59 ctermbg=NONE cterm=NONE
+hi netrwClassify  ctermfg=60 ctermbg=NONE cterm=NONE
+hi netrwComment   ctermfg=59 ctermbg=NONE cterm=NONE
+hi netrwExe       ctermfg=97 ctermbg=NONE cterm=NONE
+hi netrwHelpCmd   ctermfg=60 ctermbg=NONE cterm=NONE
+hi netrwList      ctermfg=60 ctermbg=NONE cterm=NONE
+hi netrwQuickHelp ctermfg=60 ctermbg=NONE cterm=NONE
+hi netrwSymLink   ctermfg=30 ctermbg=NONE cterm=NONE
+hi netrwVersion   ctermfg=60 ctermbg=NONE cterm=NONE
+
