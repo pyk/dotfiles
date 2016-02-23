@@ -8,15 +8,11 @@ Copy paste this on your current session
     # clone repo
     git clone https://github.com/pyk/dotfiles.git ~/.dotfiles
 
-    # setup bash
-    ln -sf ~/.dotfiles/bash/.bashrc ~/.bashrc
-    exec $SHELL # restart bash session
+    # run setup
+    cd ~/.dotfiles && sh setup.sh
 
-    # setup top(1)
-    ln -sf ~/.dotfiles/top/.toprc ~/.toprc
 
-    # setup git
-    ln -sf ~/.dotfiles/git/.gitconfig ~/.gitconfig
+## Vim
 
     # setup vim(1)
     mkdir -p $HOME/.vim/colors
@@ -28,4 +24,7 @@ Copy paste this on your current session
     # run vim and install the plugins withthis command
     # :PlugInstall
 
+## Sublime text on Mac
+Create `subl(1)` alias using 
 
+    ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/bin/subl
