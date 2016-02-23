@@ -79,7 +79,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='$ '
+    PS1='% '
     # PS1='\w $ '
     # PS1='\[\033[01;32m\]\u@\h\[\033[01;34m\] \W $(__git_ps1 "(%s)") \$ '
 else
