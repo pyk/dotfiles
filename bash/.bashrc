@@ -148,3 +148,19 @@ export LANGUAGE="en_US.UTF-8"
 
 ## #Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+## add spark to path
+export PATH="/home/vagrant/go/src/github.com/pyk/spark-playground/spark-1.6.1-bin-hadoop2.6/bin:$PATH"
+export PATH="/home/vagrant/go/src/github.com/pyk/spark-playground/spark-1.6.1-bin-hadoop2.6/sbin:$PATH"
+
+# virtualenvwrapper
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$GOPATH
+source /usr/local/bin/virtualenvwrapper.sh
+
+# bazel
+source /home/vagrant/.bazel/bin/bazel-complete.bash
+export PATH="$PATH:$HOME/bin"
+
+# set timezone
+TZ='Asia/Jakarta'; export TZ
