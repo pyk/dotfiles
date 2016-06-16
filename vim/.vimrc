@@ -13,7 +13,7 @@ syntax on
 " this code doesn't work on vim in the terminal
 set autoread " auto read when file changed from outside
 
-colorscheme bayus
+colorscheme githublike
 
 set background=dark
 
@@ -40,6 +40,7 @@ set textwidth=80  " break every 80 character
 set number
 set numberwidth=4
 
+" Hightlight the current line
 set cursorline
 
 set ignorecase
@@ -102,7 +103,8 @@ call plug#begin('~/.vim/plugged')
   Plug 'fatih/vim-go'
   Plug 'rhysd/vim-clang-format'
   Plug 'mattn/emmet-vim'
-  Plug 'bling/vim-airline'
+  Plug 'vim-airline/vim-airline'
+  Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 
@@ -126,3 +128,4 @@ set laststatus=2
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline#extensions#tabline#buffer_nr_show = 1
+let g:airline_theme='light'
