@@ -1,3 +1,4 @@
 alias ~="cd $HOME"
 alias ..="cd .."
 alias pyk="cd $GOPATH/src/github.com/pyk"
+alias mysudo='sudo -E env "PATH=$PATH"'
