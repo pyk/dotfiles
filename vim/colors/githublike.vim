@@ -129,14 +129,17 @@ hi yamlFlowStringDelimiter ctermfg=057
 hi yamlFlowIndicator       ctermfg=235
 
 " HTML syntax
-hi htmlTagN ctermfg=235
-hi htmlH1 ctermfg=235
-hi htmlH2 ctermfg=235
-hi htmlH3 ctermfg=235
-hi htmlTag ctermfg=235
-hi htmlEndTag ctermfg=235
-hi htmlArg ctermfg=235
-hi htmlTagName ctermfg=160
-hi htmlString ctermfg=057
-hi htmlLink ctermfg=057
+hi htmlArg         ctermfg=235
+hi htmlEndTag      ctermfg=235
+hi htmlH1          ctermfg=235
+hi htmlH2          ctermfg=235
+hi htmlH3          ctermfg=235
+hi htmlLink        ctermfg=057
 hi htmlSpecialChar ctermfg=093
+hi htmlString      ctermfg=057
+hi htmlTag         ctermfg=235
+hi htmlTagN        ctermfg=235
+hi htmlTagName     ctermfg=160
+
+" CPP
+hi cppStructure ctermfg=057
