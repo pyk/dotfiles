@@ -143,3 +143,9 @@ hi htmlTagName     ctermfg=160
 
 " CPP
 hi cppStructure ctermfg=057
+
+" MySQL
+hi sqlStatement ctermfg=160
+hi sqlKeyword ctermfg=057
+hi sqlSpecial ctermfg=057
+hi sqlType ctermfg=057
