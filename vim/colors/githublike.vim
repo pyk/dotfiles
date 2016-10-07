@@ -144,8 +144,23 @@ hi htmlTagName     ctermfg=160
 " CPP
 hi cppStructure ctermfg=057
 
-" MySQL
+" SQL
+hi sqlKeyword   ctermfg=057
+hi sqlSpecial   ctermfg=057
 hi sqlStatement ctermfg=160
-hi sqlKeyword ctermfg=057
-hi sqlSpecial ctermfg=057
-hi sqlType ctermfg=057
+hi sqlType      ctermfg=057
+
+" Elixir
+" 057 blue
+" 160 red
+" 235 dark
+hi elixirAlias               ctermfg=057
+hi elixirAtom                ctermfg=235
+hi elixirBlockDefinition     ctermfg=160
+hi elixirFunctionDeclaration ctermfg=057
+hi elixirModuleDeclaration   ctermfg=057
+hi elixirOperator            ctermfg=160
+hi elixirString              ctermfg=235
+hi elixirStringDelimiter     ctermfg=235
+hi elixirVariable            ctermfg=057
+
