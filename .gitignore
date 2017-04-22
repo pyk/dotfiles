@@ -1,0 +1,8 @@
+# from virtualenv installer
+virtualenv/
+
+# from java installer
+java/
+
+# from rbenv installer
+rbenv/

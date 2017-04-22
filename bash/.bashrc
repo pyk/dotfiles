@@ -146,6 +146,9 @@ export TERM='xterm-256color'
 export LC_ALL="en_US.UTF-8"
 export LANGUAGE="en_US.UTF-8"
 
+# set timezone
+TZ='Asia/Jakarta'; export TZ
+
 ## #Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
