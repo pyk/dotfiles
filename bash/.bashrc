@@ -152,3 +152,8 @@ TZ='Asia/Jakarta'; export TZ
 ## #Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
+# Ryzen machine
+alias connect-wifi='sudo wpa_supplicant -B -iwlx18d6c70e61db -c/etc/wpa_supplicant.conf -Dwext && sudo dhclient wlx18d6c70e61db'
+
+# CUDA
+export PATH=$PATH:/usr/local/cuda-8.0/bin
