@@ -6,6 +6,7 @@
 [user]
     name =  Bayu Aldi Yansyah
     email = bayualdiyansyah@gmail.com
+    signingkey = 45E52C0C
 
 [mergetool]
     keepBackup = true
@@ -35,3 +36,6 @@
 
 [credential]
     helper = cache
+
+[commit]
+    gpgsign = true
