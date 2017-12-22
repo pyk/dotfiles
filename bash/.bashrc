@@ -154,6 +154,21 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 # Ryzen machine
 alias connect-wifi='sudo wpa_supplicant -B -iwlx18d6c70e61db -c/etc/wpa_supplicant.conf -Dwext && sudo dhclient wlx18d6c70e61db'
+alias connect-huawei='sudo wpa_supplicant -B -iwlx18d6c70e61db -c/etc/wpa_supplicant/huawei.conf -Dwext && sudo dhclient wlx18d6c70e61db'
+alias connect-vpn='sudo sed -i -e "1inameserver 10.35.240.10\\" /etc/resolv.conf && sudo openvpn --config ~/bayu.ovpn'
 
 # CUDA
 export PATH=$PATH:/usr/local/cuda-8.0/bin
+
+
+. /home/pyk/torch/install/bin/torch-activate
+
+
+# added by Miniconda2 4.3.21 installer
+# export PATH="/home/pyk/miniconda2/bin:$PATH"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
