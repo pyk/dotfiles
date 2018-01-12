@@ -24,7 +24,12 @@ Copy paste this on your current session
     # run vim and install the plugins withthis command
     # :PlugInstall
 
+Setup specific file type setting:
+
+    mkdir -p $HOMR/.vim/ftplugin
+    ln -s $HOME/.vim/ftplugin $HOME/.dotfiles/vim/ftplugin
+
 ## Sublime text on Mac
-Create `subl(1)` alias using 
+Create `subl(1)` alias using
 
     ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/bin/subl
