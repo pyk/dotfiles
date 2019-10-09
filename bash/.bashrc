@@ -150,7 +150,7 @@ export LANGUAGE="en_US.UTF-8"
 TZ='Asia/Jakarta'; export TZ
 
 ## #Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+# export PATH="/usr/local/heroku/bin:$PATH"
 
 # Ryzen machine
 alias connect-wifi='sudo wpa_supplicant -B -iwlx18d6c70e61db -c/etc/wpa_supplicant.conf -Dwext && sudo dhclient wlx18d6c70e61db'
@@ -158,10 +158,10 @@ alias connect-huawei='sudo wpa_supplicant -B -iwlx18d6c70e61db -c/etc/wpa_suppli
 alias connect-vpn='sudo sed -i -e "1inameserver 10.35.240.10\\" /etc/resolv.conf && sudo openvpn --config ~/bayu.ovpn'
 
 # CUDA
-export PATH=$PATH:/usr/local/cuda-8.0/bin
+# export PATH=$PATH:/usr/local/cuda-8.0/bin
 
 
-. /home/pyk/torch/install/bin/torch-activate
+# . /home/pyk/torch/install/bin/torch-activate
 
 
 # added by Miniconda2 4.3.21 installer
