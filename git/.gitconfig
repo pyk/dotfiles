@@ -7,7 +7,6 @@
     name =  Bayu Aldi Yansyah
     email = bayualdiyansyah@gmail.com
 	signingkey = 5AC66980ACFDC5ADB03D7F83D8A041C18D8F6E4B
-	signinkey = 5AC66980ACFDC5ADB03D7F83D8A041C18D8F6E4B
 
 [mergetool]
     keepBackup = true
