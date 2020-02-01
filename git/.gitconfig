@@ -6,7 +6,7 @@
 [user]
     name =  Bayu Aldi Yansyah
     email = bayualdiyansyah@gmail.com
-    signingkey = 45E52C0C
+	signingkey = 5AC66980ACFDC5ADB03D7F83D8A041C18D8F6E4B
 
 [mergetool]
     keepBackup = true
@@ -35,7 +35,10 @@
     statusHints = false
 
 [credential]
-    helper = cache
+	helper = cache --timeout=86400
 
 [commit]
     gpgsign = true
+
+[remote "origin"]
+    fetch = +refs/heads/*:refs/remotes/origin/*
