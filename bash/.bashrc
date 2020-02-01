@@ -161,7 +161,7 @@ alias connect-vpn='sudo sed -i -e "1inameserver 10.35.240.10\\" /etc/resolv.conf
 # export PATH=$PATH:/usr/local/cuda-8.0/bin
 
 
-# . /home/pyk/torch/install/bin/torch-activate
+#. /home/pyk/torch/install/bin/torch-activate
 
 
 # added by Miniconda2 4.3.21 installer
@@ -172,3 +172,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
+
+# enable passphrase prompt for gpg
+export GPG_TTY=$(tty)
